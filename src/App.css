@@ -1,0 +1,128 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15%;
+  padding-top: 0.5rem;
+  background-color: #613DC1;
+}
+
+@media screen and (orientation: landscape) {
+  .nav {
+    height: 25%;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 48em) {
+  .nav {
+    height: 15%;
+  }
+}
+
+.nav__logo {
+  margin-left: 1rem;
+  width: 2rem;
+  height: auto;
+  fill: rgb(240,240,240);
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    height: 0px;
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.nav__item {
+  width: 120%;
+  text-transform: uppercase;
+  border-bottom: 0.3rem solid transparent;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  color: rgb(170,170,170);
+  text-align: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  letter-spacing: 0.06rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav__item:nth-child(1) {
+  margin-left: 13%;
+}
+
+@media screen and (min-width: 48em) {
+  .nav__item:nth-child(1) {
+    margin-left: 0%;
+  }
+}
+
+.nav__item--selected {
+  border-bottom: 0.2rem solid #97DFFC;
+  color: rgb(255,255,255);
+}
+
+.content {
+  height: 85%;
+  background-color: rgb(237, 237, 237);
+  padding: 2.5rem;
+  box-shadow: inset 0px 0px 2px -2px rgba(0,0,0,0.3),
+              inset 0px 4px 6px -3px rgba(0,0,0,0.6);
+}
+
+@media screen and (orientation: landscape) {
+  .content {
+    height: 75%;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 48em) {
+  .content {
+    height: 85%;
+  }
+}
+
+.card {
+  height: 100%;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.3),
+              0px 0px 10px rgba(0,0,0,0.2);
+}
