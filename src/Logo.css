@@ -1,0 +1,6 @@
+.nav__logo {
+  margin-left: 1rem;
+  width: 2rem;
+  height: auto;
+  fill: var(--color-text-on-primary-primary);
+}

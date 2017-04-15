@@ -1,0 +1,25 @@
+:root {
+  --color-theme-primary-dark: #613dc1;
+  --color-theme-primary-light: #6b47cb;
+  --color-theme-secondary-dark: #97dffc;
+  --color-theme-secondary-light: #a6e5ff;
+  --color-text-on-primary-primary: #ffffff;
+  --color-text-on-primary-muted: #aaaaaa;
+  /* TODO: success warning danger info white*/
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
