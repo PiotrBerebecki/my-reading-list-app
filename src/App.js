@@ -11,7 +11,7 @@ class App extends Component {
         <div>
           <NavBar />
           <Route exact path="/" render={() => (
-            <MainContent tag="favourite-tag"/>
+            <MainContent tag="javascript"/>
           )} />
           <Route path="/:section/:tag" render={({match}) => (
             <MainContent tag={match.params.tag}/>
