@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Provider, createStore } from 'redux';
-// import { name } from 'module';
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import promise from 'redux-promise';
 
+import reducer from './reducers';
 import App from './App';
 import './index.css';
 
 
-// const storewithMiddleWare =
+const createStoreWithMiddleWare = applyMiddleware(promise)(createStore);
 
 
 ReactDOM.render(
-  // <Provider store={}>
+  <Provider store={createStoreWithMiddleWare(reducer)}>
     <App />
-  // </Provider>,
-  //
-  //
-,
+  </Provider>,
   document.getElementById('root')
 );
