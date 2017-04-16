@@ -1,10 +1,20 @@
 :root {
-  --color-theme-primary-dark: #613dc1;
-  --color-theme-primary-light: #6b47cb;
-  --color-theme-secondary-dark: #97dffc;
-  --color-theme-secondary-light: #a6e5ff;
+  --color-theme-primary: rgb(66, 133, 244);
+  --color-theme-secondary: rgb(245, 180, 0);
+  --color-theme-body-background: #fafafa;
+  --color-theme-card-background: #ffffff;
+
   --color-text-on-primary-primary: #ffffff;
-  --color-text-on-primary-muted: #aaaaaa;
+  --color-text-on-primary-muted: rgb(192, 214, 251);
+  --color-text-on-card-primary: #333333;
+  
+  --color-theme-navbar-box-shadow-border: rgba(0,0,0,0.2);
+  --color-theme-navbar-box-shadow-spread: rgba(0,0,0,0.3);
+
+  --color-theme-card-box-shadow-border: rgba(0,0,0,0.3);
+  --color-theme-card-box-shadow-spread: rgba(0,0,0,0.3);
+
+  --max-width-md: 48em;
   /* TODO: success warning danger info white*/
 }
 
@@ -21,5 +31,6 @@ html {
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
 body {
+  background-color: var(--color-theme-body-background);
   font-family: 'Roboto', sans-serif;
 }

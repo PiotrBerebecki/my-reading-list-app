@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 
+import { CardPreview } from './CardPreview';
+import './MainContent.css';
 
 class MainContent extends Component {
 
   render() {
     return (
-      <div>
-        {this.props.tag}
-      </div>
+      <main className="main">
+        <CardPreview />
+      </main>
     );
   }
 }
