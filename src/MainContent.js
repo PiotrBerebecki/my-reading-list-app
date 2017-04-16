@@ -8,7 +8,6 @@ import './MainContent.css';
 
 class MainContent extends Component {
   componentDidMount() {
-    console.log('===== didUpdated');
     this.props.fetchArticles(this.props.tag);
   }
 
