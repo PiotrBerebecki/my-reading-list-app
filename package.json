@@ -5,17 +5,25 @@
   "devDependencies": {
     "babel-eslint": "^7.2.2",
     "eslint-plugin-react": "^6.10.0",
+    "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router-dom": "^4.1.1"
+    "react-redux": "^5.0.4",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "rename": "mv build/index.html build/200.html",
+    "surge": "surge ./build --domain reading-list.surge.sh",
+    "deploy": "run-s build rename surge"
   }
 }
