@@ -1,11 +1,13 @@
 import React from 'react';
 
-import ArticlesList from './../articles/ArticlesList';
 import './MainContent.css';
 
 
-export const MainContent = () => (
+const MainContent = ({children}) => (
   <main className="main">
-    <ArticlesList />
+    {children}
   </main>
 );
+
+
+export default MainContent;
