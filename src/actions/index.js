@@ -8,7 +8,7 @@ export const fetchArticles = (tag) => {
     process.env.REACT_APP_DB_URL_LOCALHOST :
     process.env.REACT_APP_DB_URL_HEROKU;
 
-  const request = axios.get(`${baseUrl}/tag/?q=${tag}`);
+  const request = axios.get(`${baseUrl}/tag/?tag=${tag}`);
 
   return {
     type: FETCH_ARTICLES,
