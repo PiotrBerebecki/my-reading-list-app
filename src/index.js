@@ -4,14 +4,14 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import promise from 'redux-promise';
 
-import reducer from './reducers';
-import App from './App';
+import rootReducer from './rootReducer';
+import App from './app/App';
 import './index.css';
 
 
 // setup redux dev tools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducer, composeEnhancers(applyMiddleware(promise)));
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(promise)));
 
 
 ReactDOM.render(

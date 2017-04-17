@@ -61,11 +61,19 @@
   color: var(--color-theme-primary);
   font-size: var(--font-size-x-small);
   font-weight: normal;
+  line-height: 1.125rem;
 }
 
 .header__additional-info {
   color: var(--color-text-on-card-x-muted);
   font-size: var(--font-size-xx-small);
+  line-height: 1.125rem;
+}
+
+.header__mid-diviter:after {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  content: '·';
 }
 
 .card__image {

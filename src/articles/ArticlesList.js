@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 
 import { fetchArticles } from './actions';
 import { CardPreview } from './CardPreview';
-import './MainContent.css';
 
-class MainContent extends Component {
+
+class ArticlesList extends Component {
   componentDidMount() {
     this.props.fetchArticles(this.props.tag);
   }
@@ -43,4 +43,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(MainContent);
+export default connect(mapStateToProps, mapDispatchToProps)(ArticlesList);
