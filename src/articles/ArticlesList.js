@@ -3,9 +3,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchArticles } from './actions';
-import { Card } from './Card';
-import { ArticlePreview } from './ArticlePreview';
-import { Error } from './Error';
+import Card from './Card';
+import ArticlePreview from './ArticlePreview';
+import Error from './../app/Error';
 
 
 class ArticlesList extends Component {
@@ -21,11 +21,11 @@ class ArticlesList extends Component {
 
   render() {
     let renderArticles;
-    console.log('===== this.props.articles', this.props.articles);
-    if (this.props.articles.error) {
+
+    if (this.props.articles.error || !this.props.articles) {
       renderArticles = (
         <Card>
-          <Error error={this.props.articles.error} />
+          <Error error={this.props.articles.error || 'Error fetching articles'} />
         </Card>
       );
     } else {

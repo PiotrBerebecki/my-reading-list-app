@@ -1,0 +1,7 @@
+.search__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  fill: var(--color-text-on-primary-muted);
+  transition: .1s all;
+}

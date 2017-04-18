@@ -1,0 +1,50 @@
+.nav__list {
+  list-style-type: none;
+  overflow-y: scroll;
+  user-select: none;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    height: 0px;
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/*.nav__item:nth-child(1) {
+  margin-left: 13%;
+}*/
+
+/*@media screen and (min-width: 48em) {
+  .nav__item:nth-child(1) {
+    margin-left: 0%;
+  }
+}*/
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__link {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  border-bottom-width: 0.3rem;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  color: var(--color-text-on-primary-muted);
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.06rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav__link:hover {
+  color: var(--color-text-on-primary-primary);
+}
+
+.nav__link--active {
+  border-bottom-color: var(--color-theme-secondary);
+  color: var(--color-text-on-primary-primary);
+}

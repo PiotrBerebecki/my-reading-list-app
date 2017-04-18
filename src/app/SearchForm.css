@@ -1,0 +1,22 @@
+.search__form {
+  margin-left: auto;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: var(--color-text-on-primary-muted);
+}
+
+.search__input {
+  background-color: var(--color-theme-primary);
+  color: var(--color-text-on-primary-primary);
+  max-width: 6rem;
+  border: 0;
+  vertical-align: middle;
+  font-size: var(--font-size-xx-small);
+  font-weight: lighter;
+}
+
+.search__input:focus {
+  outline: 0;
+}

@@ -1,10 +1,11 @@
 import { FETCH_ARTICLES } from './../constants';
 
 
-const articles = (state = [], action) => {
+const articles = (state = '', action) => {
   switch (action.type) {
     case FETCH_ARTICLES:
-      return action.payload.data;
+      if (action.payload.data) { return action.payload.data; }
+      return state;
     default:
       return state;
   }
