@@ -1,0 +1,4 @@
+.error__title {
+  color: var(--color-text-on-card-warning);
+  text-align: center;
+}

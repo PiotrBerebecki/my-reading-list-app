@@ -3,7 +3,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchArticles } from './actions';
-import { CardPreview } from './CardPreview';
+import { Card } from './Card';
+import { ArticlePreview } from './ArticlePreview';
+import { Error } from './Error';
 
 
 class ArticlesList extends Component {
@@ -18,13 +20,27 @@ class ArticlesList extends Component {
   }
 
   render() {
-    const renderCardPreviews = this.props.articles.map((article, idx) => {
-      return <CardPreview key={idx} {...article} />;
-    });
+    let renderArticles;
+    console.log('===== this.props.articles', this.props.articles);
+    if (this.props.articles.error) {
+      renderArticles = (
+        <Card>
+          <Error error={this.props.articles.error} />
+        </Card>
+      );
+    } else {
+      renderArticles = this.props.articles.map((article, idx) => {
+        return (
+          <Card key={idx}>
+            <ArticlePreview  {...article} />
+          </Card>
+        );
+      });
+    }
 
     return (
       <main className="main">
-        {renderCardPreviews}
+        {renderArticles}
       </main>
     );
   }

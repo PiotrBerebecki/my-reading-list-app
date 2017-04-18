@@ -10,6 +10,7 @@
   --color-text-on-card-primary: #505050;
   --color-text-on-card-muted: #676767;
   --color-text-on-card-x-muted: #a5a5a5;
+  --color-text-on-card-warning: rgb(245, 180, 0);
 
   --color-theme-navbar-box-shadow-border: rgba(0,0,0,0.2);
   --color-theme-navbar-box-shadow-spread: rgba(0,0,0,0.3);
@@ -26,7 +27,7 @@
   --font-size-xx-small: 0.8125rem;
 
   --max-width-md: 48em;
-  /* TODO: success warning danger info white*/
+  /* TODO: success danger info white*/
 }
 
 html {
