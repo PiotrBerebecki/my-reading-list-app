@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 import './NavBarHeader.css';
 import Logo from './Logo';
-import SearchForm from './SearchForm';
+// import SearchForm from './SearchForm';
 
 
 const NavBarHeader = () => (
   <div className="nav__header">
     <NavLink to="/"><Logo /></NavLink>
-    <SearchForm />
+    {/* <SearchForm /> */}
   </div>
 );
 
