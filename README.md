@@ -7,6 +7,10 @@ http://reading-list.surge.sh/
 - react-router
 - redux
 - redux-promise
+- express
+- PostgreSQL
+
+Back-end: https://github.com/PiotrBerebecki/reading-list-database
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
