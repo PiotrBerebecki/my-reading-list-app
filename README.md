@@ -1,7 +1,12 @@
-# Share a Story
+# Reading list app
+
+http://reading-list.surge.sh/
 
 ## Tech stack
 - React
+- react-router
+- redux
+- redux-promise
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
